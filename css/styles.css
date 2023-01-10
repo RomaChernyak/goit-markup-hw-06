@@ -541,6 +541,11 @@
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
     transition: transform var(--time-distribution);
     
+    padding-top: 72px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+
     width: 408px;
     height: 576px;
 
@@ -587,15 +592,9 @@
 }
 
 .modal-header {
-    position: absolute;
-    width: 360px;
-    left: 24px;
-    top: 72px;
-
     margin: 0;
+    margin-bottom: 14px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     /* font-size: 16px; */
     line-height: 1.5em;
@@ -605,10 +604,6 @@
 }
 
 .form {
-    position: absolute;
-    top: 112px;
-    left: 24px;
-    
     width: 360px;
     /* outline: 1px solid tomato; */
     margin-left: auto;
@@ -623,6 +618,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
+
+    transition: border-color var(--time-distribution);
 }
 
 .form-field.comment-field {
@@ -639,7 +636,6 @@
 
 .form-input {
     position: relative;
-    transition: border-color var(--time-distribution);
 }
 
 .form-icon {
@@ -668,9 +664,13 @@
     border-radius: 4px;
 
     color: rgba(0, 0, 0, 1);
+    outline: transparent;
+    transition: border-color var(--time-distribution);
 }
 
 .comment {
+    display: block;
+    
     line-height: 1.33;
     padding: 8px 16px;
 
@@ -679,7 +679,7 @@
     border-radius: 4px;
 
     resize: none;
-
+    outline: transparent;
     transition: border-color var(--time-distribution);
 }
 
@@ -821,7 +821,7 @@
 }
 
 .page-footer .footer-block_two {
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 .page-footer .logo {
@@ -893,13 +893,15 @@
 
 .form-footer {
     /* outline: 1px solid blue; */
-    width: 453px;
+    /* width: 100%; */
     display: flex;
 }
 
 .form-footer .subscribe-form {
     display: flex;
     align-items: center;
+
+    margin-right: 24px;
 }
 
 .subscribe-form .subscribe-mail::placeholder {
@@ -918,8 +920,9 @@
     display: flex;
     align-items: center;
     padding-left: 16px;
-    margin-right: 24px;
     
+    outline: transparent;
+
     color: var(--primary-text-color);
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -928,8 +931,6 @@
 }
 
 .subscribe-btn {
-    position: relative;
-    
     background-color: var(--iris-color);
     color: var(--primary-text-color);
 
@@ -937,6 +938,7 @@
     text-align: left;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
     width: 165px;
     padding: 8px 24px;
@@ -945,12 +947,7 @@
 }
 
 .airplane-icon {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
-
-    display: flex;
+    display: inline-block;
 
     fill: var(--primary-text-color);
 }

@@ -345,84 +345,6 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="modal-close_btn" data-modal-close>
-            <svg class="modal-close_icon" width="8" height="8">
-              <use href="./images/sprite.svg#icon-close-vector"></use>
-            </svg>
-          </button>
-          <p class="modal-header">
-            Leave your contacts and we will call you back
-          </p>
-          <form class="form">
-            
-            <label class="form-field">
-              <span class="form-label">
-                Name
-              </span>
-              <div class="form-input">
-                <input type="text" name="name" class="input">
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./images/sprite.svg#icon-person-icon-form"></use>
-                </svg>
-              </div>
-            </label>
-            
-            <label class="form-field">
-              <span class="form-label">
-                Phone  
-              </span>
-              <div class="form-input">
-                <input type="tel" name="tel" class="input">
-                <svg class="form-icon" width="18" height="24">
-                  <use href="./images/sprite.svg#icon-phone-form"></use>
-                </svg>
-              </div>
-            </label>
-            
-            <label class="form-field">
-              <span class="form-label">
-                Email
-              </span>
-              <div class="form-input">
-                <input type="email" name="mail" class="input">
-                <svg class="form-icon" width="18" height="24">
-                  <use href="./images/sprite.svg#icon-mail-form"></use>
-                </svg>
-              </div>
-            </label>
-
-            <label class="form-field comment-field">
-              <span class="form-label">
-                Comment
-              </span>
-              <textarea
-              name="comment"
-              rows="6.5"
-              placeholder="Text input"
-              class="comment"
-              ></textarea>
-            </label>
-
-            <label class="form-field checkbox-field">
-              <input type="checkbox" name="check-bottom" value="accept-policy" class="checkbox">
-              <span class="checkbox-icon">
-                <svg width="10" height="8">
-                  <use href="./images/sprite.svg#icon-checkbox"></use>
-                </svg>
-              </span>
-              <p class="terms-agree">
-                I accept the terms and conditions of the <span class="policy-link">
-                  <a href="https://www.google.com.ua/?client=safari">Privacy Policy</a>
-                </span>
-              </p>
-            </label>
-
-            <button type="submit" class="send-btn">Send</button>
-          </form>
-        </div>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="container">
@@ -473,7 +395,7 @@
               <input type="email" name="mail" id="email" class="subscribe-mail" placeholder="E-mail">
             </label>
             <button type="submit" class="subscribe-btn">
-              Subscribe
+              <span>Subscribe</span>
               <svg class="airplane-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-paper-airplane"></use>
               </svg>
@@ -482,6 +404,84 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close_btn" data-modal-close>
+          <svg class="modal-close_icon" width="8" height="8">
+            <use href="./images/sprite.svg#icon-close-vector"></use>
+          </svg>
+        </button>
+        <p class="modal-header">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="form">
+          
+          <label class="form-field">
+            <span class="form-label">
+              Name
+            </span>
+            <span class="form-input">
+              <input type="text" name="name" class="input">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person-icon-form"></use>
+              </svg>
+            </span>
+          </label>
+          
+          <label class="form-field">
+            <span class="form-label">
+              Phone  
+            </span>
+            <span class="form-input">
+              <input type="tel" name="tel" class="input">
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/sprite.svg#icon-phone-form"></use>
+              </svg>
+            </span>
+          </label>
+          
+          <label class="form-field">
+            <span class="form-label">
+              Email
+            </span>
+            <span class="form-input">
+              <input type="email" name="mail" class="input">
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/sprite.svg#icon-mail-form"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field comment-field">
+            <span class="form-label">
+              Comment
+            </span>
+            <textarea
+            name="comment"
+            rows="6"
+            placeholder="Text input"
+            class="comment"
+            ></textarea>
+          </label>
+
+          <label class="form-field checkbox-field">
+            <input type="checkbox" name="check-bottom" value="accept-policy" class="checkbox">
+            <span class="checkbox-icon">
+              <svg width="10" height="8">
+                <use href="./images/sprite.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <span class="terms-agree">
+              I accept the terms and conditions of the <span class="policy-link">
+                <a href="https://www.google.com.ua/?client=safari">Privacy Policy</a>
+              </span>
+            </span>
+          </label>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
